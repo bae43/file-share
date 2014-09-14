@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #333;
+  font: 14px Sans-Serif;
+  padding: 50px;
+  background: #eee;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0 12px 0;
+  margin: 0;
+}
+h2 {
+  font-size: 16px;
+  text-align: center;
+  padding: 0 0 12px 0;
+}
+
+#container {
+  box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
+  position: relative;
+  background: white;
+}
+
+#upload-pane {
+  background-color: rgba(255,255,255,.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+#upload-card {
+  width: 460px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  background-color: white;
+}
+#upload-header {
+  background-color: #2298B4;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+#upload-form {
+  padding: 10px;
+}
+
+.button {
+  background-color: #2297b4;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #064e7a;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 17px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #5b6178;
+}
+.button:hover {
+  background-color: #47b6de;
+}
+.button:active {
+  margin-top: 1px;
+}
+#no-contents {
+	height: 80px;
+margin: 30px auto;
+text-align: center;
+font-size: 32px;
+color: #CCC;
+}
+
+#upload-button {
+  position: absolute;
+  right: 20px;
+}
+#drop-zone {
+  border: 8px dashed #ccc;
+  min-height: 260px;
+  margin: 20px auto;
+  color: #ccc;
+  font-size: 28px;
+  text-align: center;
+}
+#drop-zone.hover {
+  border: 10px dashed #0c0;
+}
+#drop-zone img {
+  display: block;
+  margin: 10px auto;
+}
+#drop-zone p {
+  margin: 10px;
+  font-size: 14px;
+}
+#drop-text-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 105px;
+}
+table {
+  background-color: #F3F3F3;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 15px 0;
+}
+
+th {
+  background-color: #2298B4;
+  color: #FFF;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+th small {
+  font-size: 9px;
+}
+
+td, th {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.direct-download {
+  content: url(download.png);
+  position: absolute;
+  left: 10px;
+}
+
+.direct-download {
+  display: none;
+}
+
+.direct-download-container {
+  float: left;
+  width: 100%;
+  height: 26px;
+}
+
+.direct-download:hover {
+  content: url(download-hover.png);
+}
+
+tr:hover.menu-entry td a.direct-download {
+  display: block;
+  float: left;
+  left: 0;
+  margin: 5px;
+  padding: 0;
+}
+
+/*a:hover:before {
+ content: url(download.png);
+ position: absolute;
+ left: 10px;
+ }
+ a:hover:before:hover {
+ content: url(download-hover.png);
+ }*/
+
+td a {
+  color: #663300;
+  display: block;
+  padding: 5px 10px;
+}
+th a {
+  padding-left: 0
+}
+
+td:nth-of-type(2) a {
+  background: url(./.images/file.png) no-repeat 10px 50%;
+  padding-left: 35px;
+}
+th:nth-of-type(2) {
+  padding-left: 35px;
+}
+
+td:not(:nth-of-type(2)) a {
+  background-image: none !important;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #E6E6E6;
+}
+
+tr:hover td {
+  background-color: #CACACA;
+}
+
+tr:hover td a {
+  color: #007AFF;
+}
+/* icons for file types (icons by famfamfam) */
+
+/* images */
+table tr td:nth-of-type(2) a[href$=".jpg"], table tr td:nth-of-type(2) a[href$=".png"], table tr td:nth-of-type(2) a[href$=".gif"], table tr td:nth-of-type(2) a[href$=".svg"], table tr td:nth-of-type(2) a[href$=".jpeg"] {
+  background-image: url(./.images/image.png);
+}
+
+/* zips */
+table tr td:nth-of-type(2) a[href$=".zip"] {
+  background-image: url(./.images/zip.png);
+}
+
+/* css */
+table tr td:nth-of-type(2) a[href$=".css"] {
+  background-image: url(./.images/css.png);
+}
+
+/* docs */
+table tr td:nth-of-type(2) a[href$=".doc"], table tr td:nth-of-type(2) a[href$=".docx"], table tr td:nth-of-type(2) a[href$=".ppt"], table tr td:nth-of-type(2) a[href$=".pptx"], table tr td:nth-of-type(2) a[href$=".pps"], table tr td:nth-of-type(2) a[href$=".ppsx"], table tr td:nth-of-type(2) a[href$=".xls"], table tr td:nth-of-type(2) a[href$=".xlsx"] {
+  background-image: url(./.images/office.png)
+}
+
+/* videos */
+table tr td:nth-of-type(2) a[href$=".avi"], table tr td:nth-of-type(2) a[href$=".wmv"], table tr td:nth-of-type(2) a[href$=".mp4"], table tr td:nth-of-type(2) a[href$=".mov"], table tr td:nth-of-type(2) a[href$=".m4a"] {
+  background-image: url(./.images/video.png);
+}
+
+/* audio */
+table tr td:nth-of-type(2) a[href$=".mp3"], table tr td:nth-of-type(2) a[href$=".ogg"], table tr td:nth-of-type(2) a[href$=".aac"], table tr td:nth-of-type(2) a[href$=".wma"] {
+  background-image: url(./.images/audio.png);
+}
+
+/* web pages */
+table tr td:nth-of-type(2) a[href$=".html"], table tr td:nth-of-type(2) a[href$=".htm"], table tr td:nth-of-type(2) a[href$=".xml"] {
+  background-image: url(./.images/xml.png);
+}
+
+table tr td:nth-of-type(2) a[href$=".php"] {
+  background-image: url(./.images/php.png);
+}
+
+table tr td:nth-of-type(2) a[href$=".js"] {
+  background-image: url(./.images/script.png);
+}
+
+/* directories */
+table tr.dir td:nth-of-type(2) a {
+  background-image: url(./.images/folder.png);
+}
+
+
