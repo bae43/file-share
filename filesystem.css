@@ -210,17 +210,20 @@ tr:hover td a {
 /* icons for file types (icons by famfamfam) */
 
 /* images */
-table tr td:nth-of-type(2) a[href$=".jpg"], table tr td:nth-of-type(2) a[href$=".png"], table tr td:nth-of-type(2) a[href$=".gif"], table tr td:nth-of-type(2) a[href$=".svg"], table tr td:nth-of-type(2) a[href$=".jpeg"] {
+table tr td:nth-of-type(2) a[href$=".jpg"], table tr td:nth-of-type(2) a[href$=".png"], table tr td:nth-of-type(2) a[href$=".gif"], table tr td:nth-of-type(2) a[href$=".svg"], table tr td:nth-of-type(2) a[href$=".jpeg"],
+table tr td:nth-of-type(2) a[href$=".JPG"], table tr td:nth-of-type(2) a[href$=".PNG"], table tr td:nth-of-type(2) a[href$=".GIF"], table tr td:nth-of-type(2) a[href$=".SVG"], table tr td:nth-of-type(2) a[href$=".JPEG"] {
   background-image: url(./.images/image.png);
 }
 
 /* zips */
-table tr td:nth-of-type(2) a[href$=".zip"] {
+table tr td:nth-of-type(2) a[href$=".zip"],
+table tr td:nth-of-type(2) a[href$=".ZIP"] {
   background-image: url(./.images/zip.png);
 }
 
 /* css */
-table tr td:nth-of-type(2) a[href$=".css"] {
+table tr td:nth-of-type(2) a[href$=".css"],
+table tr td:nth-of-type(2) a[href$=".CSS"] {
   background-image: url(./.images/css.png);
 }
 
