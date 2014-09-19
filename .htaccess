@@ -1,4 +1,4 @@
-# remove .php ending
+# remove file extensions
 #RewriteEngine On
 #RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteRule ^([^\.]+)$ $1.php [NC,L]
@@ -13,4 +13,21 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
 RewriteRule (.*)$ /$1/ [R=301,L]
 
+
+DirectoryIndex _fileshare.php 
+
 ErrorDocument 404 /404.php
+
+#RewriteRule ^protected/?$ /protected/more/
+
+
+# mask files to appear in root
+Options +FollowSymLinks -Multiviews
+
+#<IfModule mod_rewrite.c> 
+#RewriteEngine on 
+#RewriteCond %{HTTP_HOST} ^files\.bryceevans\.me$ 
+# Change 'subdirectory' to be the directory you will use for your main domain. 
+#RewriteCond %{REQUEST_URI} !^/protected
+#RewriteRule ^(.*)$ /protected/$1 [L]
+#</IfModule>

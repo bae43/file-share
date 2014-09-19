@@ -225,30 +225,34 @@ table tr td:nth-of-type(2) a[href$=".css"] {
 }
 
 /* docs */
-table tr td:nth-of-type(2) a[href$=".doc"], table tr td:nth-of-type(2) a[href$=".docx"], table tr td:nth-of-type(2) a[href$=".ppt"], table tr td:nth-of-type(2) a[href$=".pptx"], table tr td:nth-of-type(2) a[href$=".pps"], table tr td:nth-of-type(2) a[href$=".ppsx"], table tr td:nth-of-type(2) a[href$=".xls"], table tr td:nth-of-type(2) a[href$=".xlsx"] {
+table tr td:nth-of-type(2) a[href$=".doc"], table tr td:nth-of-type(2) a[href$=".docx"], table tr td:nth-of-type(2) a[href$=".ppt"], table tr td:nth-of-type(2) a[href$=".pptx"], table tr td:nth-of-type(2) a[href$=".pps"], table tr td:nth-of-type(2) a[href$=".ppsx"], table tr td:nth-of-type(2) a[href$=".xls"], table tr td:nth-of-type(2) a[href$=".xlsx"],
+table tr td:nth-of-type(2) a[href$=".DOC"], table tr td:nth-of-type(2) a[href$=".DOCX"], table tr td:nth-of-type(2) a[href$=".PPT"], table tr td:nth-of-type(2) a[href$=".PPTX"], table tr td:nth-of-type(2) a[href$=".PPS"], table tr td:nth-of-type(2) a[href$=".PPSX"], table tr td:nth-of-type(2) a[href$=".XLS"], table tr td:nth-of-type(2) a[href$=".XLSX"] {
   background-image: url(./.images/office.png)
 }
 
 /* videos */
-table tr td:nth-of-type(2) a[href$=".avi"], table tr td:nth-of-type(2) a[href$=".wmv"], table tr td:nth-of-type(2) a[href$=".mp4"], table tr td:nth-of-type(2) a[href$=".mov"], table tr td:nth-of-type(2) a[href$=".m4a"] {
+table tr td:nth-of-type(2) a[href$=".avi"], table tr td:nth-of-type(2) a[href$=".wmv"], table tr td:nth-of-type(2) a[href$=".mp4"], table tr td:nth-of-type(2) a[href$=".mov"], table tr td:nth-of-type(2) a[href$=".m4a"],
+table tr td:nth-of-type(2) a[href$=".AVI"], table tr td:nth-of-type(2) a[href$=".WMV"], table tr td:nth-of-type(2) a[href$=".MP4"], table tr td:nth-of-type(2) a[href$=".MOV"], table tr td:nth-of-type(2) a[href$=".M4A"] {
   background-image: url(./.images/video.png);
 }
 
 /* audio */
-table tr td:nth-of-type(2) a[href$=".mp3"], table tr td:nth-of-type(2) a[href$=".ogg"], table tr td:nth-of-type(2) a[href$=".aac"], table tr td:nth-of-type(2) a[href$=".wma"] {
+table tr td:nth-of-type(2) a[href$=".mp3"], table tr td:nth-of-type(2) a[href$=".ogg"], table tr td:nth-of-type(2) a[href$=".aac"], table tr td:nth-of-type(2) a[href$=".wma"],
+table tr td:nth-of-type(2) a[href$=".MP3"], table tr td:nth-of-type(2) a[href$=".OGG"], table tr td:nth-of-type(2) a[href$=".AAC"], table tr td:nth-of-type(2) a[href$=".WMA"]  {
   background-image: url(./.images/audio.png);
 }
 
 /* web pages */
-table tr td:nth-of-type(2) a[href$=".html"], table tr td:nth-of-type(2) a[href$=".htm"], table tr td:nth-of-type(2) a[href$=".xml"] {
+table tr td:nth-of-type(2) a[href$=".html"], table tr td:nth-of-type(2) a[href$=".htm"], table tr td:nth-of-type(2) a[href$=".xml"],
+table tr td:nth-of-type(2) a[href$=".HTML"], table tr td:nth-of-type(2) a[href$=".HTM"], table tr td:nth-of-type(2) a[href$=".XML"]  {
   background-image: url(./.images/xml.png);
 }
 
-table tr td:nth-of-type(2) a[href$=".php"] {
+table tr td:nth-of-type(2) a[href$=".php"], table tr td:nth-of-type(2) a[href$=".PHP"] {
   background-image: url(./.images/php.png);
 }
 
-table tr td:nth-of-type(2) a[href$=".js"] {
+table tr td:nth-of-type(2) a[href$=".js"], table tr td:nth-of-type(2) a[href$=".JS"] {
   background-image: url(./.images/script.png);
 }
 
